@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Author - Coisinhas da Titia</title>
+
+
+
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+	<script type="text/javascript"> (function() { var css = document.createElement('link'); css.href = 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'; css.rel = 'stylesheet'; css.type = 'text/css'; document.getElementsByTagName('head')[0].appendChild(css); })(); </script>
+
+<!--
+	<link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/theme.css">
+
+-->
+
+	<!-- Including CSS file-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}">
+
+
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+    <a class="navbar-brand font-weight-bolder mr-3" href="{{ url_for('index')}}"><img src="{{url_for('static', filename= 'img/logo.png')}}"></a>
+    <button class="navbar-light navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsDefault" aria-controls="navbarsDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsDefault">
+    	<ul class="navbar-nav mr-auto align-items-center">
+    		<form class="bd-search hidden-sm-down">
+
+    		</form>
+    	</ul>
+    	<ul class="navbar-nav ml-auto align-items-center">
+    		<li class="nav-item">
+    		<a class="nav-link active" href="{{ url_for('index')}}">Home</a>
+    		</li>
+
+            <li class="nav-item">
+    		<a class="nav-link active" href="{{ url_for('login')}}">Registro</a>
+			</li>
+
+			<li class="nav-item">
+    		<a class="nav-link active" href="{{ url_for('purchase')}}">Cotação</a>
+			</li>
+
+
+
+			</li>
+    		<li class="nav-item">
+    		<a class="nav-link" href="{{ url_for('author')}}"><img class="rounded-circle mr-2" src="{{url_for('static', filename= 'img/av.png')}}" width="30"><span class="align-middle">Author</span></a>
+    		</li>
+    		<li class="nav-item dropdown">
+    		<a class="nav-link" href="#" id="dropdown02" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    		<style="margin-top:10px;" class="_3DJPT" version="1.1" viewbox="0 0 32 32" width="21" height="21" aria-hidden="false" data-reactid="71"><path d="M7 15.5c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5zm21.5-3.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5zm-12.5 0c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z" data-reactid="22"></path></>
+    		</a>
+
+
+
+    		</li>
+    	</ul>
+    </div>
+    </nav>
+    <main role="main">
+
+	<!--
+
+    <div class="jumbotron border-round-0 min-50vh" style="background-image:url(https://images.unsplash.com/photo-1522204657746-fccce0824cfd?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=84b5e9bea51f72c63862a0544f76e0a3&auto=format&fit=crop&w=1500&q=80);">
+
+    -->
+
+	</div>
+    <div class="container mb-4">
+
+
+<!--
+    	<img src="img/av.png" class="mt-neg100 mb-4 rounded-circle" width="128">
+
+-->
+
+    	<h1 class="font-weight-bold title">Coisinhas da Titia</h1>
+    	<p>
+    		Papelaria, bordado computadorizado e costura criativa - tudo para seu personalizado! ⭐️⭐️⭐️⭐️⭐️ WhatsApp 11 99622-8900
+    	</p>
+    </div>
+    <div class="container-fluid mb-5">
+    	<div class="row">
+    		<div class="card-columns">
+
+
+
+
+				<div class="card card-pin">
+    				<img class="card-img" src="{{url_for('static', filename= 'img/Screenshot 2021-11-14 at 18-30-33 Instagram photo by Coisinhas da Titia • Nov 8, 2021 at 5 08 PM.png')}}">
+    				<div class="overlay">
+    					<h2 class="card-title title">Cool Title</h2>
+    					<div class="more">
+    						<a href="postmore">
+    						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+    					</div>
+    				</div>
+    			</div>
+
+
+				<div class="card card-pin">
+    				<img class="card-img" src="{{url_for('static', filename= 'img/Screenshot 2021-11-14 at 18-30-38 Instagram photo by Coisinhas da Titia • Oct 27, 2021 at 9 08 PM.png')}}">
+    				<div class="overlay">
+    					<h2 class="card-title title">Cool Title</h2>
+    					<div class="more">
+    						<a href="postmore">
+    						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+    					</div>
+    				</div>
+    			</div>
+
+
+				<div class="card card-pin">
+    				<img class="card-img" src="{{url_for('static', filename= 'img/Screenshot 2021-11-14 at 18-30-42 Coisinhas da Titia on Instagram “Topo de bolo”.png')}}">
+    				<div class="overlay">
+    					<h2 class="card-title title">Topo de Bolo</h2>
+    					<div class="more">
+    						<a href="postmore">
+    						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+    					</div>
+    				</div>
+    			</div>
+
+
+				<div class="card card-pin">
+    				<img class="card-img" src="{{url_for('static', filename= 'img/Screenshot 2021-11-14 at 18-30-47 Instagram photo by Coisinhas da Titia • Oct 24, 2021 at 9 28 PM.png')}}">
+    				<div class="overlay">
+    					<h2 class="card-title title">Cool Title</h2>
+    					<div class="more">
+    						<a href="postmore">
+    						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+    					</div>
+    				</div>
+    			</div>
+
+				<div class="card card-pin">
+    				<img class="card-img" src="{{url_for('static', filename= 'img/Screenshot 2021-11-14 at 18-30-51 Instagram photo by Coisinhas da Titia • Oct 20, 2021 at 2 41 PM.png')}}">
+    				<div class="overlay">
+    					<h2 class="card-title title">Cool Title</h2>
+    					<div class="more">
+    						<a href="postmore">
+    						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+    					</div>
+    				</div>
+    			</div>
+
+
+				<div class="card card-pin">
+    				<img class="card-img" src="{{url_for('static', filename= 'img/Screenshot 2021-11-14 at 18-30-56 Coisinhas da Titia on Instagram “Waffles + Mochi - Topo”.png')}}">
+    				<div class="overlay">
+    					<h2 class="card-title title">Waffles + Mochi - Topo</h2>
+    					<div class="more">
+    						<a href="postmore">
+    						<i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i> More </a>
+    					</div>
+    				</div>
+    			</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    		</div>
+    	</div>
+    </div>
+
+    </main>
+
+
+	<!-- Including Javascript file-->
+    <script src="{{ url_for('static', filename='js/app.js') }}"></script>
+	<script src="{{ url_for('static', filename='js/theme.js') }}"></script>
+
+
+    <footer class="footer pt-5 pb-5 text-center">
+
+    <div class="container">
+
+          <div class="socials-media">
+
+            <ul class="list-unstyled">
+
+<!--
+
+
+              <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-facebook"></i></a></li>
+              <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-twitter"></i></a></li>
+
+-->
+
+
+              <li class="d-inline-block ml-1 mr-1"><a href="https://www.instagram.com/coisinhasdatitia/" class="text-dark"><i class="fa fa-instagram"></i></a></li>
+			  <li class="d-inline-block ml-1 mr-1"><a href="https://wa.me/5511996228900" class="text-dark"><i class="fa fa-whatsapp"></i></a></li>
+
+<!--
+
+              <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-google-plus"></i></a></li>
+              <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-behance"></i></a></li>
+              <li class="d-inline-block ml-1 mr-1"><a href="#" class="text-dark"><i class="fa fa-dribbble"></i></a></li>
+
+-->
+
+
+            </ul>
+
+
+
+          </div>
+
+
+        </div>
+
+                  {% extends 'base.html' %}
+
+
+    </footer>
+</body>
+
+</html>
